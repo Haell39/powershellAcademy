@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PowerShell TLDR</title>
+  </head>
+  <link rel="stylesheet" href="assets\css\styles.css" />
+  <body>
+    <header>
+      <h1>PowerShell TLDR</h1>
+      <p>Guia rápido de referência para PowerShell</p>
+    </header>
+
+    <div class="container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#introducao">Introdução</a></li>
+          <li><a href="#comandos-basicos">Comandos Básicos</a></li>
+          <li><a href="#scripts">Scripts</a></li>
+          <li><a href="#modulos">Módulos</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="introducao">
+          <h2>Introdução ao PowerShell</h2>
+          <p>
+            PowerShell é uma shell de linha de comando e linguagem de script...
+            e a várias formas de se chegar ao mesmo resultado:
+          </p>
+
+          <div class="code-block">
+            > Write-Host "Hello, World!"<br />
+            # OU <br />
+            > Write-Output "Hello, World!"
+          </div>
+        </section>
+
+        <section id="comandos-basicos">
+          <h3>Comandos Básicos</h3>
+          <p>Outros exemplos de aliases e funções semelhantes é:</p>
+
+          <div class="code-block">
+            # Voce tambem pode usar Echo e Write para imprimir na tela <br />
+            Echo "Hello, PowerShell!" <br />
+            Write "Hello, Testing!"<br />
+            # Outro exemplo disso são os seguintes comando: <br />
+            > dir <br />
+            > ls <br />
+            > Get-ChildItem <br />
+            # Ambos servem para listar os arquivos e diretórios do diretório
+            atual
+          </div>
+
+          <h4>Criação do seu proprio comando (Alias)</h4>
+
+          <div class="code-block">
+            # Por exemplo voce pode criar um aliaspara o comando "ping" do cmd
+            usado para testar a conexão com um servidor <br />
+            > Set-Alias -Name ping -Value Test-NetConnection <br>
+            # Agora é possível usar o comando "ping" para testar a conexão ao invés de "Test-Connection"
+          </div>
+
+          <div></div>
+        </section>
+
+        <!-- Adicione mais seções conforme necessário -->
+      </main>
+    </div>
+  </body>
+</html>
