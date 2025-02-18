@@ -79,6 +79,18 @@ main {
   overflow-x: auto;
 }
 
+/* Blocos de Atenção */
+.attention-block{
+  background-color: #770303;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+
 /* Títulos de seção */
 h2 {
   color: #002b36;
